@@ -1,0 +1,28 @@
+<p>endereco works!</p>
+
+<p>CEP: {{endereco.cep}}</p>
+<p>País: {{endereco.pais}}</p>
+<p>Estado: {{endereco.estado}}</p>
+<p>Cidade: {{endereco.cidade}}</p>
+<p>Bairro: {{endereco.bairro}}</p>
+<p>Rua: {{endereco.rua}}</p>
+<p>Nº: {{endereco.numero}}</p>
+
+
+<form action="">
+  <input type="number" [(ngModel)]="endereco.cep" name="cep">
+  <br>
+  <input type="text" [(ngModel)]="endereco.pais" name="pais">
+  <br>
+  <input type="text" [(ngModel)]="endereco.estado" name="estado">
+  <br>
+  <input type="text" [(ngModel)]="endereco.cidade" name="cidade">
+  <br>
+  <input type="text" [(ngModel)]="endereco.bairro" name="bairro">
+  <br>
+  <input type="text" [(ngModel)]="endereco.rua" name="rua">
+  <br>
+  <input type="number" [(ngModel)]="endereco.numero" name="numero">
+  <br>
+  <input type="submit" value="Salvar" (click)="fnSalvar()">
+</form>

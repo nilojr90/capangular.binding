@@ -1,0 +1,17 @@
+<div *ngIf="isCartao">
+  <h4>Cartão</h4>
+  <p>Emissor: {{cartao.emissor}}</p>
+  <p>Moeda: {{cartao.moeda}}</p>
+  <p>Numero: {{cartao.numero}}</p>
+  <p>Validade: {{cartao.validade | date:'shortDate':'pt-br'}}</p>
+  <p>Limite: {{cartao.limite | currency:'BRL'}}</p>
+</div>
+
+<div *ngIf="isBoleto">
+  <h4>Boleto</h4>
+  <p>Emissor: {{boleto.emissor}}</p>
+  <p>Moeda: {{boleto.moeda}}</p>
+  <p>Valor:{{boleto.valor}}</p>
+  <p>Codigo de Barras:{{boleto.codigo_barras}}</p>
+  <p>Vencimento:{{boleto.vencimento | date:'shortDate':'pt-br'}}</p>
+</div>
